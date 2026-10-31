@@ -22,5 +22,13 @@
         "no-console": 0,
         "class-methods-use-this": "off",
         "@typescript-eslint/no-explicit-any": "error"
-    }
+    },
+    "overrides": [
+        {
+            "files": ["webpack*.js"],
+            "rules": {
+                "@typescript-eslint/no-require-imports": "off"
+            }
+        }
+    ]
 }
