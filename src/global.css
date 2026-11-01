@@ -14,22 +14,32 @@ header h1 {
 }
 
 footer {
-    height: 100px;
+    min-height: 100px;
+    padding: 20px 15px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 8px;
 }
-footer .copyright {
+
+footer p {
+    margin: 0;
     font-size: 14px;
-    color: #333;
+    color: #9a9da6;
     text-align: center;
 }
-footer .copyright a {
-    color: #444;
+
+footer a {
+    color: #5ad67d;
+    text-decoration: none;
 }
-footer .copyright a:hover {
-    color: #555;
+
+footer a:hover {
+    text-decoration: underline;
 }
+
 footer .copyright:before {
     content: '©';
+    margin-right: 4px;
 }
