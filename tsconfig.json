@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    // Какую версию JavaScript получать на выходе
+    "target": "es2020",
+    // Как TypeScript понимает import/export (за сборку отвечает Webpack)
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    // Какие встроенные возможности известны: язык JS и браузер (document, fetch...)
+    "lib": ["es2020", "dom", "dom.iterable"],
+
+    // Обязательные по заданию флаги
+    "strict": true,
+    "noImplicitAny": true,
+
+    // Удобные дополнительные настройки
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true
+  },
+  // Какие файлы проверять
+  "include": ["src"]
+}
