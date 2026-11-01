@@ -11,8 +11,8 @@ export interface GetRespParams {
 }
 
 class Loader {
-    private baseLink: string;
-    private options: RequestOptions;
+    private readonly baseLink: string;
+    private readonly options: Readonly<RequestOptions>;
 
     constructor(baseLink: string, options: RequestOptions) {
         this.baseLink = baseLink;

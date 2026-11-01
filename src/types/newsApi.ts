@@ -34,3 +34,5 @@ export interface NewsResponse {
     totalResults: number;
     articles: Article[];
 }
+
+export type SourceButton = Pick<Source, 'id' | 'name'>;

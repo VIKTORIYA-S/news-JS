@@ -1,9 +1,9 @@
 import './sources.css';
-import { Source } from '../../../types/newsApi';
+import { SourceButton } from '../../../types/newsApi';
 import { query } from '../../../utils/dom';
 
 class Sources {
-    draw(data: Source[]): void {
+    draw(data: SourceButton[]): void {
         const fragment = document.createDocumentFragment();
         const sourceItemTemp = query<HTMLTemplateElement>(document, '#sourceItemTemp');
 
