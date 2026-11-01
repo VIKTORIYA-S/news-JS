@@ -4,12 +4,16 @@ body {
     font-family: sans-serif;
 }
 
+html {
+    color-scheme: dark;
+}
+
 header {
-    padding: 10px 30px;
+    padding: 10px clamp(15px, 4vw, 30px);
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: clamp(28px, 8vw, 40px);
     font-weight: 800;
 }
 
